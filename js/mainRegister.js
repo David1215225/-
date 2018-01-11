@@ -2,14 +2,14 @@ require.config({
 	paths : {
 		"jquery" : "jquery-1.11.3",
 		"cookie" : "jquery.cookie",
-		"list" : "list"
+		"register" : "register"
 	}
 })
-require(["jquery","cookie","list"],function($,cookie,list){
+require(["jquery","cookie","register"],function($,cookie,register){
 	$(function(){
 		$(".top").load("top.html",function(){
-			list.list()
-		})
-		$("footer").load("bottom.html");
+			register.register()
+		});
+		$(".footer").load("bottom.html");
 	})
 })

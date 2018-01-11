@@ -1,5 +1,5 @@
 define(function(){
-	function list(){
+	function register(){
 		$(".siteMenuA").mouseover(function(){
 			$(".siteMenu").css("display","block");
 		}).mouseleave(function(){
@@ -7,6 +7,6 @@ define(function(){
 		})
 	}
 	return {
-		list : list
+		register : register
 	}
 })

@@ -1,0 +1,530 @@
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, pre, form, input, textarea, th, td, select {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+em, i {
+  font-style: normal;
+}
+
+b, strong {
+  font-weight: 100;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.top {
+  width: 100%;
+}
+.top .top_container {
+  width: 100%;
+  height: 29px;
+  background: #F5F5F5;
+  border-bottom: 1px solid #E7E7E7;
+}
+.top .top_container .top_center {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.top .top_container .top_center ul li {
+  width: 75px;
+  float: left;
+  height: 29px;
+  text-align: center;
+  line-height: 29px;
+}
+.top .top_container .top_center ul li a {
+  color: #FF0033;
+  font-size: 12px;
+  font-weight: bold;
+}
+.top .top_container .top_center ul li a:hover {
+  color: #C80A28;
+  text-decoration: none;
+}
+.top .top_container .top_center ul li .collect {
+  color: #565656;
+}
+.top .top_container .top_center ul li .collect:hover {
+  color: #C80A28;
+}
+.top .top_container .top_center .login_out {
+  float: right;
+}
+.top .top_container .top_center .login_out .welcome {
+  display: block;
+  line-height: 29px;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+.top .top_container .top_center .login_out a {
+  display: block;
+  float: left;
+  line-height: 29px;
+  font-size: 12px;
+  color: #565656;
+  font-weight: bold;
+}
+.top .top_container .top_center .login_out a:hover {
+  color: #C80A28;
+  text-decoration: none;
+}
+.top .top_container .top_center .login_out .login {
+  margin-left: 16px;
+}
+.top .top_container .top_center .login_out .register {
+  color: #C80A28;
+  margin-left: 9px;
+}
+.top .top_container .top_center .login_out .shoppingCar {
+  margin-left: 15px;
+  background: url(../images/line.jpg) no-repeat 100% 50%;
+}
+.top .top_container .top_center .login_out .online-service {
+  margin-left: 13px;
+}
+.top .top_container .top_center .login_out .help-center {
+  margin-left: 21px;
+}
+.top .top_container .top_center .login_out .websiteNav {
+  float: left;
+}
+.top .top_container .top_center .login_out a {
+  margin-left: 21px;
+}
+.top .top_container .top_center .login_out a i {
+  display: block;
+  line-height: 29px;
+  width: 12px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 10px;
+  height: 10px;
+  background: url(../images/icon.png) no-repeat -32px -28px;
+}
+.top .siteMenu {
+  width: 1198px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: none;
+  background: white;
+  height: 100px;
+}
+.top .logo_search {
+  width: 1200px;
+  margin: 0 auto;
+  height: 133px;
+}
+.top .logo_search h1 {
+  width: 355px;
+  height: 75px;
+  margin-top: 13px;
+  float: left;
+}
+.top .logo_search h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.top .logo_search .search {
+  width: 492px;
+  float: left;
+  margin-left: 45px;
+  margin-top: 28px;
+}
+.top .logo_search .search .search_con {
+  height: 36px;
+  background: #C80A28;
+}
+.top .logo_search .search .search_con .text {
+  width: 407px;
+  margin: 2px 0 0 2px;
+  height: 32px;
+  border: none;
+  float: left;
+  outline: none;
+  color: #C80A28;
+}
+.top .logo_search .search .search_con .button {
+  width: 81px;
+  background: #C80A28;
+  height: 32px;
+  margin: 2px 0 0 2px;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.top .logo_search .search .search_list {
+  margin-top: 10px;
+}
+.top .logo_search .search .search_list li {
+  width: 65px;
+  float: left;
+  background: url(../images/line2.jpg) no-repeat 90% 84%;
+}
+.top .logo_search .search .search_list li a {
+  font-size: 12px;
+  color: #666;
+}
+.top .logo_search .search .search_list li a:hover {
+  text-decoration: none;
+  color: #C80A28;
+}
+.top .logo_search .code {
+  float: left;
+  margin: 16px 0 0 168px;
+}
+.top .logo_search .code img {
+  width: 100px;
+  height: 100px;
+}
+.top .logo_search .code span {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  height: 15px;
+  color: #FF0032;
+  font-weight: bold;
+}
+.top .allClassify_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.top .allClassify_container a {
+  display: block;
+  width: 100px;
+  height: 33px;
+  float: left;
+  line-height: 33px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+.top .allClassify_container a:hover {
+  text-decoration: none;
+  color: #C80A28;
+}
+.top .allClassify_container .allClassify {
+  float: left;
+}
+.top .allClassify_container .allClassify a {
+  width: 190px;
+  background: #FE0032;
+  color: white;
+}
+.top .allClassify_container .group_buying {
+  width: 100px;
+  margin-left: 16px;
+}
+.top .allClassify_container .inform_adver {
+  float: right;
+  width: 200px;
+}
+.top .allClassify_container .inform_adver .information {
+  background: url(../images/sjt.png) no-repeat 85% 50%;
+}
+
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 58px;
+}
+.footer .help {
+  width: 1133px;
+  height: 125px;
+  background: #FAFAFA;
+  padding-top: 20px;
+  padding-left: 67px;
+}
+.footer .help .help_info1 h4 {
+  background-position: -8px 1px;
+}
+.footer .help .help_info2 h4 {
+  background-position: -8px -34px;
+}
+.footer .help .help_info3 h4 {
+  background-position: -8px -67px;
+}
+.footer .help .help_info4 h4 {
+  background-position: -8px -100px;
+}
+.footer .help .help_info5 h4 {
+  background-position: -8px -133px;
+}
+.footer .help .help_info6 {
+  width: 133px;
+}
+.footer .help .help_info6 h4 {
+  background-position: -8px -166px;
+}
+.footer .help_info {
+  float: left;
+  width: 200px;
+}
+.footer .help_info h4 {
+  width: 100px;
+  height: 20px;
+  text-indent: -99999px;
+  background: url(../images/footer01.png) no-repeat;
+  margin-bottom: 4px;
+}
+.footer .help_info li {
+  height: 20px;
+  line-height: 20px;
+}
+.footer .help_info li a {
+  font-size: 12px;
+  color: #565656;
+}
+.footer .promise {
+  width: 100%;
+  height: 95px;
+  margin: 20px 0;
+  background: url(../images/feature1.png) no-repeat top center;
+}
+.footer .link {
+  width: 100%;
+  height: 30px;
+  background: #393939;
+}
+.footer .link ul {
+  width: 696px;
+  margin: 0 auto;
+}
+.footer .link ul li {
+  float: left;
+  padding: 0 22px 0 18px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: url(../images/line3.jpg) no-repeat 100% 62%;
+}
+.footer .link ul li a {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.footer .copyright {
+  width: 1200px;
+  margin-top: 10px;
+}
+.footer .copyright p {
+  text-align: center;
+  font-size: 12px;
+  width: 950px;
+  margin: 0 auto;
+  line-height: 40px;
+}
+.footer .copyright p img {
+  float: left;
+  display: inline-block;
+}
+.footer .copyright p span {
+  float: left;
+}
+.footer .copyright p a {
+  float: left;
+  color: #939393;
+}
+.footer .copyright p .link {
+  width: 50px;
+  height: 12px;
+  margin-top: 15px;
+}
+.footer .copyright ul {
+  width: 330px;
+  margin: 5px auto;
+}
+.footer .copyright ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+.loginPage {
+  width: 1100px;
+  margin: 0 auto;
+}
+.loginPage .login_left {
+  width: 420px;
+  margin: 40px 40px 0 0;
+  padding-top: 25px;
+  float: left;
+}
+.loginPage .login_left img {
+  width: 410px;
+  height: 290px;
+}
+.loginPage .login_right {
+  width: 527px;
+  float: right;
+  border-left: #DDD 1px dashed;
+  padding-left: 80px;
+  margin-top: 65px;
+}
+.loginPage .login_right .log {
+  width: 300px;
+  padding: 20px 40px 20px 40px;
+  margin-top: 25px;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid #EEE;
+  opacity: 0.95;
+  font-size: 14px;
+}
+.loginPage .login_right .log p {
+  font-size: 14px;
+  color: #393939;
+  line-height: 33px;
+  margin-top: 10px;
+}
+.loginPage .login_right .log p input {
+  width: 207px;
+  height: 33px;
+  line-height: 33px;
+  color: #BBBBBB;
+}
+.loginPage .login_right .log h2 {
+  width: 100%;
+  height: 30px;
+  font-size: 19px;
+  border-bottom: solid 1px #eee;
+  color: #666;
+}
+.loginPage .login_right .log .user {
+  margin-top: 40px;
+  width: 100%;
+}
+.loginPage .login_right .log .verifyP span {
+  float: left;
+}
+.loginPage .login_right .log .verifyP input {
+  float: left;
+}
+.loginPage .login_right .log .verifyP a {
+  display: block;
+  width: 80px;
+  float: left;
+  height: 37px;
+  background: #000000;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 8px;
+  color: white;
+  margin-left: 5px;
+}
+.loginPage .login_right .log .verifyP a:hover {
+  text-decoration: none;
+}
+.loginPage .login_right .log .verify {
+  width: 120px;
+}
+.loginPage .login_right .log .submit {
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+}
+.loginPage .login_right .log .login_in {
+  background: #BE0929;
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+.loginPage .login_right .log .checkbox {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+.loginPage .login_right .log .registerPage {
+  margin-left: 50px;
+}
+.loginPage .login_right .log .registerPage a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #565656;
+}
+.loginPage .login_right .elseLogin {
+  width: 528px;
+  margin-top: 30px;
+}
+.loginPage .login_right .elseLogin span {
+  font-size: 12px;
+  float: left;
+  line-height: 29px;
+}
+.loginPage .login_right .elseLogin a {
+  display: block;
+  width: 97px;
+  height: 29px;
+  margin-right: 10px;
+  float: left;
+  text-indent: -999999px;
+  background: url(../images/NEWS_login.png) no-repeat;
+}
+.loginPage .login_right .elseLogin .qq {
+  background-position: 0 -528px;
+}
+.loginPage .login_right .elseLogin .tweet {
+  background-position: -111px -528px;
+}
+.loginPage .login_right .elseLogin .thunder {
+  background-position: -222px -528px;
+}
+.loginPage .login_right .elseLogin .alipay {
+  background-position: -333px -528px;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,9 +1,11 @@
-//头部样式及设置的公共变量
+//设置的公共变量
 $fontSize : 12;
 $colorA : #C80A28;
 $topLineHeight : 29;
 $borderStyle :1px solid #E7E7E7;
+//公共样式引入
 @import "public";
+//导入公共头部和底部的样式
 @import "top_bottom";
 //列表页正文
 .list_content{
@@ -20,7 +22,6 @@ $borderStyle :1px solid #E7E7E7;
             .first_floor{
                 .first_floorLi{
                     width:100%;
-//                  height: 39px;
                     >a{
                         display: block;
                         width:172px;

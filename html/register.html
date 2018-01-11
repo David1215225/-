@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script type="text/javascript" src="../js/require.js" defer async="true" data-main="../js/mainRegister"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="top clearfix"></div>
+		<!--注册-->
+		<div class="registerPage clearfix">
+			<div class="registerPage_left">
+				<p class="directLogin">
+					<span>已是韩都衣舍用户：</span>
+					<a href="#">直接登陆</a>
+				</p>
+				<img src="../images/367-250.png" alt="" />
+				<p class="read">
+					<input type="text" />
+					<a href="#"><img src="../images/footer00.png" alt="" /></a>
+				</p>
+			</div>
+			<div class="registerPage_right">
+				<div class="cut">
+					<span class="num">1</span>
+					<span class="select_register">选择注册方式：</span>
+					<a class="register_mobile" href="javascript:;">使用手机注册</a>
+					<a class="register_email" href="javascript:;">使用邮箱注册</a>
+				</div>
+				<div class="second_step">
+					<span class="num">2</span>
+					<span class="write">填写您的信息：</span>
+				</div>
+				<div class="register_list">
+					<form action="/" method="post" class="mobile_form clearfix">
+						<p class="mobile_num">
+							<span class="mobile">您的手机号：</span>
+							<input class="moblie_text" type="text" />
+							<a class="mobile_btn" href="javascript:;">发送验证码</a>
+							<i class="mobile_error">错误</i>
+						</p>
+						<p class="elseLanding">请输入您在注册时使用的手机号码,若当前号码不用/丢失，或无法收到验证码? <a href="#">其他验证方式</a></p>
+						<p class="authNum">
+							<span class="auth">验证码：</span>
+							<input class="auth_text" type="text" />
+							<i class="auth_error"></i>
+						</p>
+						<p class="password_num">
+							<span class="password">密码：</span>
+							<input class="password_text" type="password" />
+							<i class="password_error"></i>
+						</p>
+						<p class="password_length">6-16位字符，可使用字母、数字或符号的组合</p>
+						<p class="password_two">
+							<span class="submit_password">确认密码：</span>
+							<input class="password_two_text" type="password"/>
+							<i class="submitP_error"></i>
+						</p>
+						<p class="agreement_look">
+							<input type="checkbox" checked="checked" />
+							<em class="agreement">我已看过并接受<a href="#">《用户协议》</a></em>
+						</p>
+						<input class="submit_mobile" type="submit" value="同意协议并注册"/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		<div class="footer clearfix"></div>
+	</body>
+</html>
