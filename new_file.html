@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width:10px;
+				height: 10px;
+				background:red;
+			}
+			.pox{
+				width:100px;
+				height: 100px;
+				display: none;
+				background:blue;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	</head>
+	<body>
+		<input class="txt" type="text" placeholder="测试" />
+		<div class="box"></div>
+		<div class="pox"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".box").hover(function(){
+				$(".pox").show();
+			},function(){
+				$(".pox").hide();
+			})
+			$(".txt").focusin(function(){
+				$(this).focusout(function(){
+					var re = /^(1){1}\d{10}$/;
+					var use = $(this).val();
+					if(use == ""){
+						$(".box").html("不能为空");
+					}else{
+						if(re.test(use)){
+							$(".box").html("恭喜");
+						}else{
+							$(".box").html("格式错误");
+						}
+					}
+				})
+			})
+		})
+	</script>
+</html>

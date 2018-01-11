@@ -1,0 +1,627 @@
+@import "public";
+//头部样式及设置的公共变量
+$fontSize : 12;
+$colorA : #C80A28;
+$topLineHeight : 29;
+$borderStyle :1px solid #E7E7E7;
+@import "index_public";
+@import "top_bottom";
+//banner
+.banner{
+    width:100%;
+    height: 450px;
+    margin: 0 auto;
+    ul li{
+        width:100%;
+        height: 450px;
+        background:url(../images/banner.jpg) no-repeat center center;
+    }
+}
+//公告
+.notice{
+    width:100%;
+    height: 120px;
+    background:url(../images/xp.png) no-repeat center center;
+    a{
+        display: block;
+        width:1200px;
+        height: 120px;
+        margin: 0 auto;
+    }
+}
+//内容区
+.container{
+    width:1200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    .upperHalf{
+        width:100%;
+        //part1互联网品牌生态运营集团
+        .inter_group{
+            width:677px;
+            float: left;
+            h2{
+                width:200px;
+                height:30px;
+                float: left;
+                background:url(../images/web_index.png) no-repeat;
+                background-position: 0 -355px;
+            }
+            .reload{
+                a{
+                    display: block;
+                    float: right;
+                    height: 15px;
+                    line-height: 15px;
+                    font-size:#{$fontSize}px;
+                    width:40px;
+                    color:#565656;
+                    padding-left:20px;
+                    background:url(../images/bt.png) no-repeat left center;
+                }
+                a:hover{
+                    text-decoration: none;
+                }
+            }
+            ul{
+                width:672px;
+                float: left;
+                border-top:$borderStyle;
+                border-left:$borderStyle;
+                li{
+                    width:167px;
+                    height: 74px;
+                    border-right:$borderStyle;
+                    border-bottom:$borderStyle;
+                    float: left;
+                    text-align: center;
+                    position: relative;
+                    a{
+                        width:100%;
+                        height: 100%;
+                        display: block;
+                        span{
+                            img{
+                                position: absolute;
+                                left:0;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                margin: auto;
+                            }
+                        }
+                        .hidden{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        //part2韩都动态、明星家族、媒体报道、无穷花开
+        .list_news{
+            float: right;
+            width:498px;
+            border:$borderStyle;
+            .list_column{
+                width:100%;
+                li{
+                    width:25%;
+                    float: left;
+                    a{
+                        display: block;
+                        float: left;
+                        width:100%;
+                        height: 44px;
+                        line-height: 44px;
+                        border-bottom:2px solid #E7E7E7;
+                        text-align: center;
+                        font-size:14px;
+                        color:#000000;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                    }
+                    .active{
+                        color:#FF0F3F;
+                        border-bottom:2px solid #FF0F3F;
+                    }
+                }
+            }
+            .list_news1{
+                width:478px;
+                float: left;
+                padding: 28px 11px 0 9px;
+                li{
+                    width:230px;
+                    height: 174px;
+                    float: left;
+                    position: relative;
+                    img{
+                        width:100%;
+                        height: 100%;
+                    }
+                    span{
+                        position: absolute;
+                        width:100%;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size:#{$fontSize}px;
+                        color:#CAD5E4;
+                        bottom: 0;
+                        left: 0;
+                        background:rgba(0,0,0,0.5) repeat;
+                        text-align: center;
+                    }
+                }
+                .second{
+                    float: right;
+                }
+            }
+            .list_new2{
+                float: left;
+                margin-top: 5px;
+                padding: 0 11px 0 9px;
+                li{
+                    width:230px;
+                    height: 25px;
+                    line-height: 25px;
+                    float: left;
+                    background:url(../images/sq1.png) no-repeat left center;
+                    padding-left:9px;
+                    a{
+                        font-size:#{$fontSize}px;
+                        color:#333333;
+                    }
+                }
+            }
+        }
+        //part3熊本有嘻哈
+        .img{
+            width:680px;
+            height: 316px;
+            float: left;
+            margin-top:21px;
+        }
+        //part4明星家族
+        .family{
+            width:498px;
+            float: right;
+            height: 316px;
+            margin-top: 21px;
+            position: relative;
+            img{
+                width:100%;
+                height: 100%;
+            }
+            .tv-btn{
+                display: block;
+                width:40px;
+                height: 40px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                img{
+                    width:100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    //part5新品上市
+    .arrival{
+        width: 1200px;
+        margin-top: 20px;
+        h2{
+            height: 24px;
+            background:url(../images/web_index.png) no-repeat;
+            background-position: 0 -51px;
+            ul{
+                float: left;
+                display: inline-block;
+                margin-left: 220px;
+                li{
+                    float: left;
+                    cursor: pointer;
+                    color: #dddddd;
+                    line-height: 18px;
+                    background:url(../images/line3.jpg) no-repeat 100% 35%;
+                    a{
+                        color: #666;
+                        width: 62px;
+                        height: 22px;
+                        font-size: #{$fontSize}px;
+                        line-height: 18px;
+                        vertical-align: middle;
+                        margin: 0 5px;
+                        text-align: center;
+                        display: inline-block;
+                        float: left;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                    }
+                    .on{
+                        background:url(../images/2.png) no-repeat;
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+    //part6韩风时尚女装
+    .part6{
+        .bg{
+            background:rgba(125,172,198,0.5);
+        }
+        .title{
+            background-position: 0 -78px;
+            .underline{
+                 border-bottom:1px solid #565656;
+            }
+        }
+        .nazha{
+            img{
+                width:580px;
+            }
+        }
+        .sweater{
+            .first{
+                height: 253px;
+                span{
+                    width:180px;
+                }
+            }
+            .on{
+                height: 160px;
+                margin-top: 10px;
+            }
+        }
+        .hot_sell{
+            width:178px;
+            float: left;
+            margin-left:10px;
+            border: #{$borderStyle};
+            border-top:none;
+            padding:0 10px;
+            h2{
+                background:none;
+                font-size:14px;
+                line-height: 36px;
+                height: 36px;
+                border-bottom: 1px dashed #DDDDDD;
+                color:#{$colorA};
+                font-weight:bold;
+                text-align: center;
+            }
+            .hot_sell_list{
+                margin-top: 9px;
+                .noBorder{
+                    border: none;
+                }
+                >li{
+                    width:100%;
+                    float: left;
+                    border-bottom:1px solid #DDDDDD;
+                    h3{
+                        height: 35px;
+                        line-height: 35px;
+                        font-size:#{$fontSize}px;
+                        cursor: pointer;
+                        span{
+                            display: block;
+                            width:16px;
+                            height: 35px;
+                            float: left;
+                            vertical-align: middle;
+                            position: relative;
+                            margin-right:10px;
+                            img{
+                                width:16px;
+                                height: 16px;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                margin: auto;
+                            }
+                        }
+                    }
+                    ul{
+                        width:100%;
+                        margin-bottom: 10px;
+                        float: left;
+                        .hot_img{
+                            width:80px;
+                            float: left;
+                            position: relative;
+                            img{
+                                width:100%;
+                                height: 100%;
+                            }
+                            span{
+                                position: absolute;
+                                background:url(../images/web_index.png) no-repeat -100px -298px;
+                                top: 0;
+                                left: 0;
+                                width:19px;
+                                height: 25px;
+                                color: white;
+                                text-align: center;
+                                line-height: 21px;
+                            }
+                        }
+                        .hot_word{
+                            width:90px;
+                            float: right;
+                            margin-top: 3px;
+                            p{
+                                line-height: 22px;
+                            }
+                            .hot_name{
+                                font-size:#{$fontSize}px;
+                                color:#565656;
+                            }
+                            .hot_price_new{
+                                font-size:14px;
+                                color:#{$colorA};
+                                font-weight:bold;
+                            }
+                            .hot_price_old{
+                                font-size:#{$fontSize}px;
+                                color:#999999;
+                                text-decoration: line-through;
+                            }
+                            .hot_suc{
+                                color:#666666;
+                                font-size:#{$fontSize}px;
+                                span{
+                                    color:#{$colorA};
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //part7迪葵纳韩风时尚妈妈装
+    .part7{
+        .bg{
+            background:rgba(202,175,109,0.5);
+        }
+        .title{
+            background-position: 0 -139px;
+            .underline{
+                color:#{$colorA};
+            }
+        }
+        .nazha{
+            img{
+                width:790px;
+            }
+        }
+        .sweater{
+            .first{
+                height: 253px;
+                span{
+                    width:180px;
+                }
+            }
+            .on{
+                height: 160px;
+                margin-top: 10px;
+            }
+        }
+    }
+    //part8韩风甜美少女装
+    .part8{
+        .bg{
+            background:rgba(0,0,0,0.5);
+        }
+        .title{
+            background-position: 0 -171px;
+            .underline{
+                color:#{$colorA};
+            }
+        }
+        .nazha{
+            img{
+                width:790px;
+            }
+        }
+        .sweater{
+            .sweater_list li{
+                width:100%;
+                height: 135px;
+                position: relative;
+                .on{
+                    margin-top: 9px;
+                }
+            }
+        }
+    }
+    //part9米妮哈鲁韩风时尚童装
+    .part9{
+        .bg{
+            background:rgba(23,141,182,0.5);
+        }
+        .title{
+            background-position: 0 -202px;
+            .underline{
+                color:#{$colorA};
+            }
+        }
+        .nazha{
+            img{
+                width:790px;
+            }
+        }
+        .sweater{
+            .sweater_list li{
+                width:100%;
+                height: 206px;
+                position: relative;
+                .on{
+                    margin-top: 9px;
+                }
+            }
+        }
+    }
+    //part10尼班诗欧美时尚女装
+    .part10{
+        .bg{
+            background:rgba(38,45,51,0.5);
+        }
+        .title{
+            background-position: 0 -265px;
+            .underline{
+                color:#{$colorA};
+            }
+        }
+        .nazha{
+            img{
+                width:790px;
+            }
+        }
+        .sweater{
+            .sweater_list li{
+                width:100%;
+                position: relative;
+                .on{
+                    margin-top: 9px;
+                }
+            }
+        }
+    }
+    //part11广告时间
+    .ad{
+        width:1200px;
+        height: 90px;
+        margin-top: 30px;
+    }
+    //part12韩都资讯
+    .news{
+        width:1200px;
+        margin-top: 40px;
+        h2{
+            height: 21px;
+            border-bottom: #{$borderStyle};
+            padding: 0 6px 0 11px;
+            background: url(../images/footer04.png) no-repeat 10px 0;
+            a{
+                float: right;
+                font-size:#{$fontSize}px;
+                color:#666666;
+            }
+        }
+        .news_slider{
+            width: 350px;
+            height: 280px;
+            float: left;
+            margin-top: 10px;
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+        .news_list{
+            width:350px;
+            float: left;
+            margin-left: 33px;
+            margin-top: 20px;
+            h3{
+               background: url(../images/footer04.png) no-repeat 0px -28px;
+                width: 100%;
+                height: 15px;
+                text-indent: -9999px;
+                margin: 10px 0;
+            }
+            ul{
+                width:270px;
+                float: left;
+                li{
+                    width:100%;
+                    float: left;
+                    line-height: 28px;
+                    a{
+                        font-size:#{$fontSize}px;
+                        color:#565656;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                    }
+                    span{
+                        display: block;
+                        float: left;
+                        margin-top: 4px;
+                        font-size:#{$fontSize}px;
+                        line-height:20px;
+                    }
+                }
+                .dot{
+                    background:url(../images/sq1.png) no-repeat left center;
+                    padding-left: 5px;
+                }
+            }
+            .news_title{
+                float:left;
+                width:80px;
+            }
+        }
+        .care_us{
+            float: right;
+            background:url(../images/footer02.png) no-repeat;
+            width:448px;
+            height: 285px;
+            position: relative;
+            margin-top:20px;
+            .text{
+                position: absolute;
+                width:252px;
+                height: 25px;
+                bottom: 20px;
+                left: 6px;
+            }
+            .btn{
+                position: absolute;
+                width: 70px;
+                height: 22px;
+                background:url(../images/footer00.png) no-repeat;
+                left: 270px;
+                border: none;
+                bottom: 25px;
+            }
+        }
+    }
+}
+//友情链接
+.friendly_link{
+   width:1200px;
+   margin: 0 auto;
+   h4{
+       width:60px;
+       height: 25px;
+       line-height: 25px;
+       float: left;
+       font-size:#{$fontSize}px;
+   }
+   ul{
+       width:1140px;
+       float:left;
+       height: 25px;
+       line-height: 25px;
+       overflow: hidden;
+       li{
+           margin-right:10px;
+           float:left;
+           a{
+               color:#565656;
+               font-size:#{$fontSize}px;
+           }
+       }
+   }
+}
