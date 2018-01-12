@@ -555,6 +555,7 @@ textarea {
 .top .allClassify_container .allClassify {
   float: left;
   position: relative;
+  z-index: 2;
 }
 
 .top .allClassify_container .allClassify > a {
@@ -565,6 +566,7 @@ textarea {
 
 .top .allClassify_container .allClassify .navList {
   position: absolute;
+  height: 450px;
   top: 33px;
   left: 0;
   background: #e3e3e3;
@@ -915,12 +917,48 @@ textarea {
   width: 100%;
   height: 450px;
   margin: 0 auto;
+  position: relative;
 }
 
-.banner ul li {
+.banner .img_list li {
   width: 100%;
   height: 450px;
-  background: url(../images/banner.jpg) no-repeat center center;
+  position: absolute;
+  opacity: 0;
+}
+
+.banner .img_list li img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .img_list .on {
+  opacity: 1;
+}
+
+.banner .dot {
+  width: 100%;
+  position: absolute;
+  bottom: 6px;
+  text-align: center;
+}
+
+.banner .dot li {
+  width: 120px;
+  height: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  background: #ffffff;
+  color: #333333;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+}
+
+.banner .dot .active {
+  background: #333333;
+  color: #ffffff;
 }
 
 .notice {

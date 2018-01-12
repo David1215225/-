@@ -382,6 +382,7 @@ textarea {
 .top .allClassify_container .allClassify {
   float: left;
   position: relative;
+  z-index: 2;
 }
 
 .top .allClassify_container .allClassify > a {
@@ -392,6 +393,7 @@ textarea {
 
 .top .allClassify_container .allClassify .navList {
   position: absolute;
+  height: 450px;
   top: 33px;
   left: 0;
   background: #e3e3e3;

@@ -283,6 +283,7 @@
         .allClassify{
             float: left;
             position: relative;
+            z-index: 2;
             >a{
                 width:190px;
                 background:#FE0032;
@@ -290,6 +291,7 @@
             }
             .navList{
                 position: absolute;
+                height: 450px;
                 top: 33px;
                 left: 0;
                 background: #e3e3e3;
