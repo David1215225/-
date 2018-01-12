@@ -1,0 +1,1 @@
+define(function(){return{login:function(){$(".siteMenuA").mouseenter(function(){$(".siteMenu").css("display","block")}).mouseleave(function(){$(".siteMenu").css("display","none")})}}});
