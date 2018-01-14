@@ -87,6 +87,10 @@ textarea {
 }
 
 .arrival_list {
+  display: none;
+}
+
+.arrival_list {
   width: 1250px;
   overflow: hidden;
 }
@@ -913,6 +917,117 @@ textarea {
   margin-right: 10px;
 }
 
+.flutter {
+  width: 72px;
+  height: 308px;
+  position: fixed;
+  bottom: 200px;
+  right: 50%;
+  margin-right: -680px;
+  cursor: pointer;
+  display: none;
+}
+
+.flutter a {
+  display: block;
+  width: 72px;
+  height: 80px;
+  background: url("../images/float_box4.png") no-repeat;
+  text-indent: -99999px;
+}
+
+.flutter .a1 {
+  background-position: 0 -6px;
+}
+
+.flutter .a1:hover {
+  background-position: -78px -4px;
+}
+
+.flutter .a2 {
+  background-position: 0 -86px;
+}
+
+.flutter .a2:hover {
+  background-position: -78px -85px;
+}
+
+.flutter .a3 {
+  background-position: 0 -166px;
+}
+
+.flutter .a3:hover {
+  background-position: -78px -164px;
+}
+
+.flutter .a4 {
+  background-position: 0 -244px;
+}
+
+.flutter .a4:hover {
+  background-position: -78px -244px;
+}
+
+.scroll {
+  width: 100%;
+  height: 50px;
+  background: url("../images/sbg.png") repeat;
+  position: fixed;
+  z-index: 10000;
+  display: none;
+  top: 0;
+}
+
+.scroll .scroll_center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.scroll .scroll_center h2 {
+  width: 77px;
+  height: 40px;
+  float: left;
+  margin-left: 90px;
+  margin-top: 5px;
+}
+
+.scroll .scroll_center h2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll .scroll_center .search {
+  width: 733px;
+  height: 32px;
+  float: left;
+  margin-left: 90px;
+  margin-top: 9px;
+}
+
+.scroll .scroll_center .search .text {
+  width: 645px;
+  height: 28px;
+  float: left;
+}
+
+.scroll .scroll_center .search .button {
+  width: 80px;
+  height: 32px;
+  float: left;
+  border: none;
+  background: #c80a28;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.scroll .scroll_center p {
+  float: right;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 50px;
+}
+
 .banner {
   width: 100%;
   height: 450px;
@@ -1083,6 +1198,10 @@ textarea {
 .container .upperHalf .list_news .list_column li .active {
   color: #FF0F3F;
   border-bottom: 2px solid #FF0F3F;
+}
+
+.container .upperHalf .list_news .state1, .container .upperHalf .list_news .state2, .container .upperHalf .list_news .state3, .container .upperHalf .list_news .state4 {
+  display: none;
 }
 
 .container .upperHalf .list_news .list_news1 {
@@ -1317,8 +1436,9 @@ textarea {
 
 .container .part6 .hot_sell .hot_sell_list > li ul {
   width: 100%;
-  margin-bottom: 10px;
+  padding: 5px 0;
   float: left;
+  cursor: pointer;
 }
 
 .container .part6 .hot_sell .hot_sell_list > li ul .hot_img {
@@ -1605,6 +1725,7 @@ textarea {
 .friendly_link {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .friendly_link h4 {
@@ -1615,12 +1736,20 @@ textarea {
   font-size: 12px;
 }
 
-.friendly_link ul {
-  width: 1140px;
+.friendly_link .ok {
+  width: 1080px;
+  position: relative;
   float: left;
+  overflow: hidden;
   height: 25px;
   line-height: 25px;
+}
+
+.friendly_link ul {
+  width: 10000px;
   overflow: hidden;
+  position: absolute;
+  left: 0;
 }
 
 .friendly_link ul li {

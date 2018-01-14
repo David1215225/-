@@ -6,6 +6,59 @@ $topLineHeight : 29;
 $borderStyle :1px solid #E7E7E7;
 @import "index_public";
 @import "top_bottom";
+//滚动导航
+.scroll{
+  width:100%;
+  height: 50px;
+  background:url("../images/sbg.png") repeat;
+  position: fixed;
+  z-index:10000;
+  display: none;
+  top: 0;
+  .scroll_center{
+    width:1200px;
+    margin: 0 auto;
+    h2{
+      width:77px;
+      height: 40px;
+      float: left;
+      margin-left:90px;
+      margin-top: 5px;
+      img{
+        width:100%;
+        height: 100%;
+      }
+    }
+    .search{
+      width:733px;
+      height: 32px;
+      float: left;
+      margin-left:90px;
+      margin-top:9px;
+      .text{
+        width:645px;
+        height: 28px;
+        float: left;
+      }
+      .button{
+        width:80px;
+        height: 32px;
+        float: left;
+        border: none;
+        background:#c80a28;
+        color: #ffffff;
+        font-size:16px;
+        line-height: 32px;
+      }
+    }
+    p{
+      float: right;
+      font-size: 12px;
+      color: #ffffff;
+      line-height: 50px;
+    }
+  }
+}
 //banner
 .banner{
     width:100%;
@@ -158,6 +211,9 @@ $borderStyle :1px solid #E7E7E7;
                     }
                 }
             }
+          .state1,.state2,.state3,.state4{
+            display:none;
+          }
             .list_news1{
                 width:478px;
                 float: left;
@@ -363,8 +419,9 @@ $borderStyle :1px solid #E7E7E7;
                     }
                     ul{
                         width:100%;
-                        margin-bottom: 10px;
+                        padding: 5px 0;
                         float: left;
+                      cursor: pointer;
                         .hot_img{
                             width:80px;
                             float: left;
@@ -633,6 +690,7 @@ $borderStyle :1px solid #E7E7E7;
 .friendly_link{
    width:1200px;
    margin: 0 auto;
+  position: relative;
    h4{
        width:60px;
        height: 25px;
@@ -640,19 +698,26 @@ $borderStyle :1px solid #E7E7E7;
        float: left;
        font-size:#{$fontSize}px;
    }
+  .ok{
+    width:1080px;
+    position: relative;
+    float:left;
+    overflow: hidden;
+    height: 25px;
+    line-height: 25px;
+  }
    ul{
-       width:1140px;
-       float:left;
-       height: 25px;
-       line-height: 25px;
-       overflow: hidden;
-       li{
-           margin-right:10px;
-           float:left;
-           a{
-               color:#565656;
-               font-size:#{$fontSize}px;
-           }
-       }
+     width:10000px;
+     overflow: hidden;
+     position: absolute;
+     left: 0;
+     li{
+         margin-right:10px;
+         float:left;
+         a{
+             color:#565656;
+             font-size:#{$fontSize}px;
+         }
+     }
    }
 }

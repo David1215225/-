@@ -52,6 +52,7 @@ $borderStyle :1px solid #E7E7E7;
                     .second_floor{
                         border-bottom:#{$borderStyle};
                         padding-top:15px;
+                      display: none;
                         >li{
                             line-height: 26px;
                             >a{
@@ -64,6 +65,7 @@ $borderStyle :1px solid #E7E7E7;
                             }
                             .three_floor{
                                 width:100%;
+                              display: none;
                                 >li{
                                     line-height:26px;
                                     margin-left:10px;
@@ -79,6 +81,9 @@ $borderStyle :1px solid #E7E7E7;
                                 }
                             }
                         }
+                    }
+                    .show{
+                      display: block;
                     }
                     .noBorder{
                         border-bottom: none;

@@ -1,1 +1,0 @@
-require.config({paths:{jquery:"jquery-1.11.3",cookie:"jquery.cookie",list:"list"}}),require(["jquery","cookie","list"],function(o,t,i){o(function(){o(".top").load("top.html",function(){i.list()}),o("footer").load("bottom.html")})});

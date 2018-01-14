@@ -1,1 +1,0 @@
-define(function(){return{list:function(){$(".siteMenuA").mouseover(function(){$(".siteMenu").css("display","block")}).mouseleave(function(){$(".siteMenu").css("display","none")})}}});

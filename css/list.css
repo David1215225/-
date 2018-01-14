@@ -740,6 +740,57 @@ textarea {
   margin-right: 10px;
 }
 
+.flutter {
+  width: 72px;
+  height: 308px;
+  position: fixed;
+  bottom: 200px;
+  right: 50%;
+  margin-right: -680px;
+  cursor: pointer;
+  display: none;
+}
+
+.flutter a {
+  display: block;
+  width: 72px;
+  height: 80px;
+  background: url("../images/float_box4.png") no-repeat;
+  text-indent: -99999px;
+}
+
+.flutter .a1 {
+  background-position: 0 -6px;
+}
+
+.flutter .a1:hover {
+  background-position: -78px -4px;
+}
+
+.flutter .a2 {
+  background-position: 0 -86px;
+}
+
+.flutter .a2:hover {
+  background-position: -78px -85px;
+}
+
+.flutter .a3 {
+  background-position: 0 -166px;
+}
+
+.flutter .a3:hover {
+  background-position: -78px -164px;
+}
+
+.flutter .a4 {
+  background-position: 0 -244px;
+}
+
+.flutter .a4:hover {
+  background-position: -78px -244px;
+}
+
 .list_content {
   width: 1200px;
   margin: 0 auto;
@@ -794,6 +845,7 @@ textarea {
 .list_content .asideMenu_hotBuy .asideMenu .first_floor .first_floorLi .second_floor {
   border-bottom: 1px solid #E7E7E7;
   padding-top: 15px;
+  display: none;
 }
 
 .list_content .asideMenu_hotBuy .asideMenu .first_floor .first_floorLi .second_floor > li {
@@ -811,6 +863,7 @@ textarea {
 
 .list_content .asideMenu_hotBuy .asideMenu .first_floor .first_floorLi .second_floor > li .three_floor {
   width: 100%;
+  display: none;
 }
 
 .list_content .asideMenu_hotBuy .asideMenu .first_floor .first_floorLi .second_floor > li .three_floor > li {
@@ -827,6 +880,10 @@ textarea {
   padding-left: 5px;
   color: #666;
   font-size: 12px;
+}
+
+.list_content .asideMenu_hotBuy .asideMenu .first_floor .first_floorLi .show {
+  display: block;
 }
 
 .list_content .asideMenu_hotBuy .asideMenu .first_floor .first_floorLi .noBorder {
