@@ -98,20 +98,19 @@ $borderStyle :1px solid #E7E7E7;
                 width:135px;
                 height: 36px;
                 float:left;
+                color:#000000;
                 line-height:36px;
                 text-align: center;
                 margin-left:10px;
                 font-size:#{$fontSize}px;
-                color:#FFFFFF;
+                //color:#FFFFFF;
                 background:url(../images/NEWS_login.png) no-repeat 0 -151px;
             }
             .register_mobile{
             }
-            .on{
-                background-position: 0 -102px;
-            }
-            .register_email{
-                color:#000000;
+            .on {
+              background-position: 0 -102px;
+              color: #ffffff;
             }
             a:hover{
                 text-decoration: none;
@@ -133,6 +132,7 @@ $borderStyle :1px solid #E7E7E7;
                 text-decoration: none;
             }
             .mobile_form{
+              display: block;
                 span{
                     width:116px;
                     float:left;
@@ -150,7 +150,7 @@ $borderStyle :1px solid #E7E7E7;
                     margin-left:2px;
                 }
                 .mobile_num{
-                    .moblie_text{
+                    .mobile_text{
                         width:207px;
                         height: 33px;
                         float: left;
@@ -232,6 +232,7 @@ $borderStyle :1px solid #E7E7E7;
                 }
             }
             .email_form{
+              display: none;
                 span{
                     width:116px;
                     float:left;

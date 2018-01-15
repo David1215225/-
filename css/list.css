@@ -137,6 +137,7 @@ textarea {
 
 .top .top_container .top_center .login_out .shoppingCar {
   margin-left: 15px;
+  width: 45px;
   background: url(../images/line.jpg) no-repeat 100% 50%;
 }
 
@@ -186,6 +187,7 @@ textarea {
   background: white;
   padding: 7px;
   border: 1px solid #E7E7E7;
+  z-index: 9;
 }
 
 .top .websiteNav .siteMenu ul {
@@ -1135,15 +1137,25 @@ textarea {
 .list_content .clothing_list .list ul {
   width: 1012px;
   overflow: hidden;
+  padding-bottom: 15px;
 }
 
 .list_content .clothing_list .list ul li {
-  width: 222px;
+  width: 240px;
+  height: 375px;
   float: left;
-  border: 1px solid #E7E7E7;
-  padding: 8px 8px 0 8px;
   margin-right: 13px;
   margin-top: 10px;
+  position: relative;
+}
+
+.list_content .clothing_list .list ul li div {
+  width: 222px;
+  float: left;
+  border-color: #ffffff;
+  border: 1px solid #E7E7E7;
+  padding: 8px 8px 0 8px;
+  transition: 0.2s;
 }
 
 .list_content .clothing_list .list ul li a {

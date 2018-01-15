@@ -297,13 +297,22 @@ $borderStyle :1px solid #E7E7E7;
             ul{
                 width:1012px;
                 overflow: hidden;
+                padding-bottom: 15px;
                 li{
-                    width:222px;
+                    width:240px;
+                    height:375px;
                     float:left;
-                    border: #{$borderStyle};
-                    padding:8px 8px 0 8px;
                     margin-right:13px;
                     margin-top: 10px;
+                    position: relative;
+                  div{
+                    width:222px;
+                    float: left;
+                    border-color: #ffffff;
+                    border: #{$borderStyle};
+                    padding:8px 8px 0 8px;
+                    transition: 0.2s;
+                  }
                     a{
                         display: block;
                         img{

@@ -314,6 +314,7 @@ textarea {
 
 .top .top_container .top_center .login_out .shoppingCar {
   margin-left: 15px;
+  width: 45px;
   background: url(../images/line.jpg) no-repeat 100% 50%;
 }
 
@@ -363,6 +364,7 @@ textarea {
   background: white;
   padding: 7px;
   border: 1px solid #E7E7E7;
+  z-index: 9;
 }
 
 .top .websiteNav .siteMenu ul {

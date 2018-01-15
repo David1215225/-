@@ -1,6 +1,6 @@
-define(function(){
+ï»¿define(function(){
 	function list(){
-        //µ¼º½ÏÔÊ¾
+        //å¯¼èˆªæ˜¾ç¤º
         function showMenu(){
             var $A = $(".allClassify").children("a");
             var $Ul = $(".allClassify .navList");
@@ -17,15 +17,15 @@ define(function(){
             });
         }
         showMenu();
-        //Èı¼¶µ¼º½Áª¶¯
+        //ä¸‰çº§å¯¼èˆªè”åŠ¨
         function threeMenu(){
-            //»ñÈ¡Ò»¼¶À¸Ä¿µÄa
+            //è·å–ä¸€çº§æ ç›®çš„a
             var $parentMenu = $(".asideMenu .first_floor .first_floorLi").children("a");
             var $bgImg = $(".asideMenu .first_floor .first_floorLi i");
-            //»ñÈ¡¶ş¼¶À¸Ä¿ºÍÁ´½Ó
+            //è·å–äºŒçº§æ ç›®å’Œé“¾æ¥
             var $sonMenu = $(".asideMenu .first_floor .first_floorLi .second_floor");
             var $sonA = $(".asideMenu .first_floor .first_floorLi .second_floor").children("li").children("a");
-            //»ñÈ¡Èı¼¶À¸Ä¿
+            //è·å–ä¸‰çº§æ ç›®
             var $threeMenu = $(".asideMenu .first_floor .first_floorLi .second_floor .three_floor");
             for(var i = 0; i < $parentMenu.length; i ++){
                 $parentMenu[i].index = i;
@@ -62,6 +62,17 @@ define(function(){
             })
         }
         threeMenu();
+        //åˆ—è¡¨é¡µé¼ æ ‡æ»‘è¿‡æ—¶æ•ˆæœ
+        (function(){
+            var $cloth = $(".clothing_list .list li div");
+            $cloth.hover(function(){
+                $(this).css({"position" : "absolute","border" : "2px solid red","background" : "#ffffff"});
+                $(this).children(".name").css({"height" : "32px"});
+            },function(){
+                $(this).css({"position" : "static","border" : "1px solid #E7E7E7","background" : "#ffffff"});
+                $(this).children(".name").css({"height" : "18px"});
+            })
+        })()
 	}
 	return {
 		list : list

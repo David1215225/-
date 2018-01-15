@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>登陆</title>
 		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
-		<script type="text/javascript" src="../js/require.js" defer async="true" data-main="../js/mainLogin"></script>
+		<script type="text/javascript" src="../js/require.js" defer async="true" data-main="../js/mainLogin" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--头部-->
@@ -19,14 +19,15 @@
 					<form action="/" method="post">
 						<h2>用户登录</h2>
 						<p class="user">用户名：<input type="text" placeholder="邮箱地址/手机号" /></p>
-						<p>密　码：<input type="password" /></p>
-						<p class="verifyP clearfix"><span>验证码：</span><input class="verify" type="text" /><a href="javascript:;">29aj</a></p>
-						<p class="submit">
-							<input class="login_in" type="submit" value="立即登陆"/>
+						<p class="password">密　码：<input type="password" /></p>
+						<p class="verifyP clearfix"><span>验证码：</span><input class="verify" type="text" /><a href="javascript:;"></a></p>
+						<p class="error_msg">请输入</p>
+                        <p class="submit">
+							<input class="login_in" type="button" value="立即登陆"/>
 							<input class="checkbox" type="checkbox" />保存登陆信息
 						</p>
 						<p class="registerPage">
-							<a href="#">注册</a>
+							<a href="register.html">注册</a>
 							<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 							<a href="#">忘记密码</a>
 						</p>

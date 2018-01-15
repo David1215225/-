@@ -14,7 +14,7 @@
 			<div class="registerPage_left">
 				<p class="directLogin">
 					<span>已是韩都衣舍用户：</span>
-					<a href="#">直接登陆</a>
+					<a href="login.html">直接登陆</a>
 				</p>
 				<img src="../images/367-250.png" alt="" />
 				<p class="read">
@@ -34,12 +34,12 @@
 					<span class="write">填写您的信息：</span>
 				</div>
 				<div class="register_list">
-					<form action="/" method="post" class="mobile_form clearfix" style="display: none;">
+					<form action="" method="post" class="mobile_form clearfix">
 						<p class="mobile_num">
 							<span class="mobile">您的手机号：</span>
-							<input class="moblie_text" type="text" />
+							<input class="mobile_text" type="text" />
 							<a class="mobile_btn" href="javascript:;">发送验证码</a>
-							<i class="mobile_error">错误</i>
+							<i class="mobile_error"></i>
 						</p>
 						<p class="elseLanding">请输入您在注册时使用的手机号码,若当前号码不用/丢失，或无法收到验证码? <a href="#">其他验证方式</a></p>
 						<p class="authNum">
@@ -62,21 +62,21 @@
 							<input type="checkbox" checked="checked" />
 							<em class="agreement">我已看过并接受<a href="#">《用户协议》</a></em>
 						</p>
-						<input class="submit_mobile" type="submit" value="同意协议并注册"/>
+						<input class="submit_mobile" type="button" value="同意协议并注册"/>
 					</form>
 					<form action="" method="post" class="email_form clearfix">
 						<p class="email_num">
-							<span class="email">Email：</span>
+							<span class="email">E-mail：</span>
 							<input class="email_text" type="text"/>
-							<i class="email_error">错误</i>
+							<i class="email_error"></i>
 						</p>
-						<p class="elseLanding">请输入您在注册时使用的手机号码,若当前号码不用/丢失，或无法收到验证码?</p>
+						<p class="elseLanding">Email地址作为用户名，同时也用于接收账户信息、订单通知及密码找回等功能</p>
 						<p class="password_num_email">
 							<span class="password_email">密码：</span>
 							<input class="password_text_email" type="password" />
 							<i class="password_error_email"></i>
 						</p>
-						<p class="password_length_email">8-24位字符，必须包含字母、数字的组合</p>
+						<p class="password_length_email">6-16位字符，必须包含字母、数字的组合</p>
 						<p class="password_two_email">
 							<span class="submit_password_email">确认密码：</span>
 							<input class="password_two_text_email" type="password"/>
@@ -86,13 +86,14 @@
 						<p class="email_verify">
 							<span class="email_verify_num">验证码：</span>
 							<input type="text"/>
-							<a href="javascript:;">291a</a>
+							<a href="javascript:;"></a>
+                            <i class="verify_error_email"></i>
 						</p>
 						<p class="agreement_look_email">
 							<input type="checkbox" checked="checked" />
 							<em class="agreement">我已看过并接受<a href="#">《用户协议》</a></em>
 						</p>
-						<input class="submit_email" type="submit" value="同意协议并注册"/>
+						<input class="submit_email" type="button" value="同意协议并注册"/>
 					</form>
 				</div>
 			</div>

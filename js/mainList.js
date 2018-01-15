@@ -1,17 +1,20 @@
-require.config({
+﻿require.config({
 	paths : {
 		"jquery" : "jquery-1.11.3",
 		"cookie" : "jquery.cookie",
 		"list" : "list",
-        "topB" : "top_bottom"
+        "top" : "top",
+        "bottom" : "bottom"
 	}
 });
-require(["jquery","cookie","list","topB"],function($,cookie,list,topB){
+require(["jquery","cookie","list","top","bottom"],function($,cookie,list,top,bottom){
 	$(function(){
 		$(".top").load("top.html",function(){
 			list.list();
-            topB.fn();
+            top.fn();
 		});
-		$(".footer").load("bottom.html");
+		$(".footer").load("bottom.html",function(){
+            bottom.fn();
+        });
 	})
 });

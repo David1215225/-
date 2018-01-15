@@ -1,9 +1,9 @@
-/**
+ï»¿/**
  * Created by msi-pc on 2018/1/13.
  */
 define(function(){
     function fn(){
-        //ÍøÕ¾µ¼º½ÏÂÀ­
+        //ç½‘ç«™å¯¼èˆªä¸‹æ‹‰
         $(".siteMenuA").mouseenter(function(){
             $(".siteMenu").css("display","block");
         }).mouseleave(function(){
@@ -14,30 +14,31 @@ define(function(){
         }).mouseout(function(){
             $(this).css("display","none");
         });
-        //È«²¿ÉÌÆ·µ¼º½Ğ§¹û
-        //Êó±êÒÆÈëÊÂ¼ş
+        //å…¨éƒ¨å•†å“å¯¼èˆªæ•ˆæœ
+        //é¼ æ ‡ç§»å…¥äº‹ä»¶
         function $mouseOver(m1,m2,m3){
-            m1.toggleClass("on");
+            m1.addClass("on");
             m2.css("display","block");
             var tag = new Image();
             tag.src = m3.src;
             m3.src = m3.alt;
             m3.alt = tag.src;
         }
-        //Êó±êÒÆ³öÊÂ¼ş
+        //é¼ æ ‡ç§»å‡ºäº‹ä»¶
         function $mouseOut(m1,m2,m3){
-            m1.toggleClass("on");
+            m1.removeClass("on");
+            console.log(m1);
             m2.css("display","none");
             var tag = new Image();
             tag.src = m3.src;
             m3.src = m3.alt;
             m3.alt = tag.src;
         }
-        //½«Êó±êµÄÒÆÈëÊÂ¼şºÍÒÆ³öÊÂ¼ş·â×°
+        //å°†é¼ æ ‡çš„ç§»å…¥äº‹ä»¶å’Œç§»å‡ºäº‹ä»¶å°è£…
         function $show($ele1,$ele2,$ele3){
-            $ele1.mouseover(function(){
+            $ele1.mouseenter(function(){
                 $mouseOver($ele1,$ele2,$ele3);
-            }).mouseout(function(){
+            }).mouseleave(function(){
                 $mouseOut($ele1,$ele2,$ele3);
             });
             $ele2.mouseover(function(){
@@ -46,7 +47,7 @@ define(function(){
                 $mouseOut($ele1,$ele2,$ele3);
             })
         }
-        //¶¨Òå±äÁ¿²¢µ÷ÓÃshow·½·¨
+        //å®šä¹‰å˜é‡å¹¶è°ƒç”¨showæ–¹æ³•
         //1
         var $fir = $(".firShow");
         var $first = $(".first_show");

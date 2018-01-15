@@ -137,6 +137,7 @@ textarea {
 
 .top .top_container .top_center .login_out .shoppingCar {
   margin-left: 15px;
+  width: 45px;
   background: url(../images/line.jpg) no-repeat 100% 50%;
 }
 
@@ -186,6 +187,7 @@ textarea {
   background: white;
   padding: 7px;
   border: 1px solid #E7E7E7;
+  z-index: 9;
 }
 
 .top .websiteNav .siteMenu ul {
@@ -898,20 +900,17 @@ textarea {
   width: 135px;
   height: 36px;
   float: left;
+  color: #000000;
   line-height: 36px;
   text-align: center;
   margin-left: 10px;
   font-size: 12px;
-  color: #FFFFFF;
   background: url(../images/NEWS_login.png) no-repeat 0 -151px;
 }
 
 .registerPage .registerPage_right .cut .on {
   background-position: 0 -102px;
-}
-
-.registerPage .registerPage_right .cut .register_email {
-  color: #000000;
+  color: #ffffff;
 }
 
 .registerPage .registerPage_right .cut a:hover {
@@ -935,6 +934,10 @@ textarea {
   text-decoration: none;
 }
 
+.registerPage .registerPage_right .register_list .mobile_form {
+  display: block;
+}
+
 .registerPage .registerPage_right .register_list .mobile_form span {
   width: 116px;
   float: left;
@@ -953,7 +956,7 @@ textarea {
   margin-left: 2px;
 }
 
-.registerPage .registerPage_right .register_list .mobile_form .mobile_num .moblie_text {
+.registerPage .registerPage_right .register_list .mobile_form .mobile_num .mobile_text {
   width: 207px;
   height: 33px;
   float: left;
@@ -1043,6 +1046,10 @@ textarea {
   cursor: pointer;
   border: none;
   background: url(../images/NEWS_login.png) no-repeat 0 -51px;
+}
+
+.registerPage .registerPage_right .register_list .email_form {
+  display: none;
 }
 
 .registerPage .registerPage_right .register_list .email_form span {

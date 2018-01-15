@@ -137,6 +137,7 @@ textarea {
 
 .top .top_container .top_center .login_out .shoppingCar {
   margin-left: 15px;
+  width: 45px;
   background: url(../images/line.jpg) no-repeat 100% 50%;
 }
 
@@ -186,6 +187,7 @@ textarea {
   background: white;
   padding: 7px;
   border: 1px solid #E7E7E7;
+  z-index: 9;
 }
 
 .top .websiteNav .siteMenu ul {
@@ -826,6 +828,15 @@ textarea {
   font-size: 14px;
 }
 
+.loginPage .login_right .log .error_msg {
+  margin-left: 60px;
+  font-size: 12px;
+  color: #c80a28;
+  margin-top: 0;
+  height: 20px;
+  display: none;
+}
+
 .loginPage .login_right .log p {
   font-size: 14px;
   color: #393939;
@@ -886,6 +897,7 @@ textarea {
   text-align: center;
   line-height: 50px;
   font-size: 12px;
+  margin-top: 0;
 }
 
 .loginPage .login_right .log .login_in {

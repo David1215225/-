@@ -63,6 +63,7 @@
                 }
                 .shoppingCar{
                     margin-left:15px;
+                  width:45px;
                     background:url(../images/line.jpg) no-repeat 100% 50%;
                 }
                 .online-service{
@@ -111,6 +112,7 @@
         background: white;
         padding:7px;
         border:#{$borderStyle};
+        z-index:9;
         ul{
             width:15%;
             float: left;
