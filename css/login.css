@@ -496,6 +496,7 @@ textarea {
   width: 92px;
   height: 50px;
   position: relative;
+  float: left;
 }
 
 .top .allClassify_container .first_show1 ul li img {

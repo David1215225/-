@@ -20,13 +20,8 @@
         //注册方式切换
         (function(){
             var $A = $(".cut a");
-            //var $email = $(".register_email");
-            //var $form = $(".register_list form");
-            //var $emailForm = $(".email_form");
-            //var on = false;
             $A.click(function(){
                 var index = $A.index(this);
-                //console.log(index);
                 $A.removeClass("on");
                 $(this).parents(".cut").siblings(".register_list").children("form").hide();
                 $(this).addClass("on");

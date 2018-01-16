@@ -27,7 +27,6 @@ define(function(){
         //鼠标移出事件
         function $mouseOut(m1,m2,m3){
             m1.removeClass("on");
-            console.log(m1);
             m2.css("display","none");
             var tag = new Image();
             tag.src = m3.src;

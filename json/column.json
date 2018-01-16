@@ -1,3 +1,322 @@
 [
-	
-]
+  {
+    "_comment" : "this is commets 注释",
+    "jsondata" : {
+      "id" : "唯一的一个 标识",
+      "name" : "栏目名称",
+      "link" : "栏目链接地址",
+      "ColumnList" : "子栏目",
+      "path" : "图片路径",
+      "file" : "稿件"
+    }
+  },
+  {
+    "id" : "1",
+    "name" : "全部商品分类",
+    "link" : "list.html",
+    "ColumnList" : [{
+      "id" : "2",
+      "name" : "娜娜日记",
+      "link" : "list.html",
+      "path" : "images/nana.png",
+      "file" : "json/file1.json"
+    },{
+      "id" : "3",
+      "name" : "HSTYLE童装",
+      "link" : "list.html",
+      "path" : "images/ht.png",
+      "file" : "json/file2.json"
+    },{
+      "id" : "4",
+      "name" : "HSTYLE",
+      "link" : "list.html",
+      "path" : "images/hstyle.png",
+      "file" : "json/file3.json"
+    },{
+      "id" : "5",
+      "name" : "米妮.哈鲁",
+      "link" : "list.html",
+      "path" : "images/mini.png",
+      "file" : "json/file1.json"
+    },{
+      "id" : "6",
+      "name" : "范.奎恩",
+      "link" : "list.html",
+      "path" : "images/forqueen.png",
+      "file" : "json/file2.json"
+    },{
+      "id" : "7",
+      "name" : "迪葵纳",
+      "link" : "list.html",
+      "path" : "images/hanyunyixiang.png",
+      "file" : "json/file3.json"
+    },{
+      "id" : "8",
+      "name" : "honeypig",
+      "link" : "list.html",
+      "path" : "images/hp.png",
+      "file" : "json/file1.json"
+    },{
+      "id" : "9",
+      "name" : "Discovery",
+      "link" : "list.html",
+      "path" : "images/dx1.png",
+      "file" : "json/file2.json"
+    },{
+      "id" : "10",
+      "name" : "果芽",
+      "link" : "list.html",
+      "path" : "images/guoya.png",
+      "file" : "json/file3.json"
+    },{
+      "id" : "11",
+      "name" : "尼班诗",
+      "link" : "list.html",
+      "path" : "images/nibbuns.png",
+      "file" : "json/file1.json"
+    },{
+      "id" : "12",
+      "name" : "素缕",
+      "link" : "list.html",
+      "path" : "images/sulv.png",
+      "file" : "json/file2.json"
+    },{
+      "id" : "13",
+      "name" : "HSTYLE男装",
+      "link" : "list.html",
+      "path" : "images/Hn.png",
+      "file" : "json/file3.json"
+    },{
+      "id" : "14",
+      "name" : "R.maker 暗码",
+      "link" : "list.html",
+      "path" : "images/anma.png",
+      "file" : "json/file1.json"
+    },{
+      "id" : "15",
+      "name" : "自古",
+      "link" : "list.html",
+      "path" : "images/zg.png",
+      "file" : "json/file2.json"
+    }]
+  },{
+    "id" : "16",
+    "name" : "精选推荐",
+    "link" : "list.html",
+    "ColumnList" : [{
+      "id" : "17",
+      "name" : "特惠精选",
+      "link" : "list.html",
+      "ColumnList" : [{
+        "id" : "18",
+        "name" : "清仓特惠",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "19",
+        "name" : "爆款特惠",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      }]
+    },{
+      "id" : "20",
+      "name" : "潮流新品",
+      "link" : "list.html",
+      "ColumnList" : [{
+        "id" : "21",
+        "name" : "2017秋装新品",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "22",
+        "name" : "原创新品",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "23",
+        "name" : "连衣裙",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "24",
+        "name" : "卫衣",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "25",
+        "name" : "毛针织衫",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      }]
+    },{
+      "id" : "26",
+      "name" : "类目新品",
+      "link" : "list.html",
+      "ColumnList" :[{
+        "id" : "27",
+        "name" : "连衣裙",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "28",
+        "name" : "牛仔裤",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "29",
+        "name" : "衬衫",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "30",
+        "name" : "卫衣",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "31",
+        "name" : "T恤",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "32",
+        "name" : "休闲裤",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "33",
+        "name" : "半身裙",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "34",
+        "name" : "套装",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "35",
+        "name" : "羽绒服",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "36",
+        "name" : "毛呢外套",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "37",
+        "name" : "棉衣",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "38",
+        "name" : "毛针织衫",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      }]
+    },{
+      "id" : "39",
+      "name" : "爆款集锦",
+      "link" : "list.html",
+      "ColumnList" :[{
+        "id" : "40",
+        "name" : "2017秋装爆款",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "41",
+        "name" : "女装爆款",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "42",
+        "name" : "男装爆款",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "43",
+        "name" : "童装爆款",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "44",
+        "name" : "妈妈装爆款",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      }]
+    },{
+      "id" : "45",
+      "name" : "百变风格",
+      "link" : "list.html",
+      "ColumnList" :[{
+        "id" : "46",
+        "name" : "潮流韩范",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "47",
+        "name" : "纯色",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "48",
+        "name" : "优雅OL",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "49",
+        "name" : "印花",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "50",
+        "name" : "甜美清新",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "51",
+        "name" : "条纹",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "52",
+        "name" : "度假出游",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "53",
+        "name" : "拼接",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "54",
+        "name" : "复古",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "55",
+        "name" : "字母",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "56",
+        "name" : "修身",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      },{
+        "id" : "57",
+        "name" : "几何",
+        "link" : "list.html",
+        "file" : "json/file3.json"
+      },{
+        "id" : "58",
+        "name" : "宽松",
+        "link" : "list.html",
+        "file" : "json/file1.json"
+      },{
+        "id" : "59",
+        "name" : "不规则",
+        "link" : "list.html",
+        "file" : "json/file2.json"
+      }]
+    }]
+  }]

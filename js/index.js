@@ -165,7 +165,6 @@
         function hotSell(){
                 //获取页面元素
                 var $Li = $(".hot_sell .hot_sell_list").children("li");
-                //console.log($Li);
                 var $H = $(".hot_sell .hot_sell_list h3");
                 var $Ul = $(".hot_sell .hot_sell_list ul");
                 var nowIndex = 0;
@@ -211,6 +210,67 @@
             });
         }
         wordSlider();
+
+        //获取json文件
+        function getJson(){
+            $.getJSON("./json/column.json",function(result){
+                //console.log(result);
+                //console.log(result[1]);
+                //console.log(result[2]);
+                //console.log(result[1].name,result[1].link);
+                //console.log(result[1].ColumnList);
+                //全部商品分类
+                $.each(result[1].ColumnList,function(index1,result1){
+                    //console.log(result1.link);
+                    //<li><a href="#"><img src="./images/nana.png" alt=""/></a></li>
+                    //console.log(<li><a id = "1" href="' + result1.link +'"><img src="' + result1.path + ' alt="' + result1.name + '"/></a></li>);
+                    //'<li><a id = "' + result1.id + '" href="'
+                    $(".first_show1 ul").append('<li class="column"><a id="'+ result1.id +'" href="html/' + result1.link +'"><img src="' + result1.path + '" alt="' + result1.name + '"/></a></li>');
+                });
+                //精选推荐
+                var secondColumn = result[2].ColumnList;
+                //console.log(secondColumn[0]);
+                $.each(secondColumn,function(index,result){
+                    //console.log(result.name);
+                    //获取二级子栏目
+                    $(".second_show1").append('<ul class="clearfix"> <h3>' + result.name + '</h3></ul>');
+                });
+                for(var num = 0; num < secondColumn.length; num ++){
+                    $.each(secondColumn[num].ColumnList,function(index2,result2){//获取三级栏目
+                        //console.log("--" + result2.name + "--" + result2.link);
+                        //<ul class="clearfix"> <h3>特惠精选</h3> <li><a href="#">清仓特惠</a></li> </ul>
+                        $(".second_show1 ul").eq(num).append('<li class="column"><a id="'+ result2.id +'" href="html/' + result2.link + '">' + result2.name + '</a></li>');
+                    })
+                }
+            })
+        }
+        getJson();
+
+        /*
+        * 点击栏目链接跳转到列表页，获取当前栏目的json稿件库，并放入列表页中
+        * 思路：
+        * 1、找到所有的a,添加点击事件
+        * 2、创建cookie,将当前点击的a的id放入cookie中。同时页面跳转到列表页中
+        * 3、在列表页中获取当前cookie的id值
+        * 4、根据id值遍历json获取到file的值，找到对应的json文件
+        * 5、遍历json文件，将稿件放入列表页中
+        * */
+        //1、遍历a,并添加点击事件
+        function createCookie(){
+            //console.log($(" .first_show1 .column a"));
+            //$(".first_show1 .column a").click(function(){
+            //    var id = $(this).attr("id");
+            //    alert(id);
+            //    $.cookie("id",id ,{ expires : 7,path : "/" });
+            //});
+            $(".allClassify").delegate(".column a","click",function(){
+                var id = $(this).attr("id");
+                $.cookie("id",id ,{ expires : 7,path : "/" });
+            })
+        }
+        //$(document).ready(function(){
+            createCookie();
+        //})
 	}
 	return {
 		fn : fn

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>内容页</title>
     <link rel="stylesheet" href="../css/content.css"/>
-    <script type="text/javascript" src="../js/require.js" defer async="true" data-main = "../js/mainContent"></script>
+    <script type="text/javascript" src="../js/require.js" defer async="true" data-main = "../js/mainContent" charset="utf-8"></script>
 </head>
 <body>
     <!--头部-->
@@ -74,17 +74,24 @@
             <div class="buying">
                 <div class="buying_show clearfix">
                     <div class="show_left">
-                        <div class="show_left_top"><img src="../images/big.jpg" alt=""/></div>
+                        <div class="show_left_top">
+                            <!--遮罩层-->
+                            <span class="mark"></span>
+                            <span class="float_layer"></span>
+                            <!--<img src="../images/big.jpg" alt=""/>-->
+                        </div>
                         <!--放大显示-->
-                        <div class="show_big" style="display: none;">width600height601</div>
+                        <div class="show_big">
+                            <!--<img src="../images/big.jpg" alt=""/>-->
+                        </div>
                         <div class="show_left_center">
-                            <ul class="clearfix">
-                                <li class="on"><img src="../images/small.jpg" alt=""/><i></i></li>
-                                <li><img src="../images/small.jpg" alt=""/><i></i></li>
-                                <li><img src="../images/small.jpg" alt=""/><i></i></li>
-                                <li><img src="../images/small.jpg" alt=""/><i></i></li>
-                                <li><img src="../images/small.jpg" alt=""/><i></i></li>
-                            </ul>
+                            <!--<ul class="clearfix">-->
+                                <!--<li class="on"><img src="../images/small.jpg" alt=""/><i></i></li>-->
+                                <!--<li><img src="../images/10.jpg" alt=""/><i></i></li>-->
+                                <!--<li><img src="../images/11.jpg" alt=""/><i></i></li>-->
+                                <!--<li><img src="../images/12.jpg" alt=""/><i></i></li>-->
+                                <!--<li><img src="../images/13.jpg" alt=""/><i></i></li>-->
+                            <!--</ul>-->
                         </div>
                         <div class="show_left_bottom">
                             <span class="collect"><a href="javasctipt:;">收藏(1)</a></span>
@@ -93,29 +100,29 @@
                     </div>
                     <div class="show_right">
                         <div class="show_right_top">
-                            <h2>娜娜日记2017秋装新款女装时尚拼接字母图案印花T恤NK6952冉0822</h2>
-                            <p class="discounts"><a href="#" target="_blank">【暖冬钜惠】全场通用满299减20/满499减50/满599减80/满799减120/满999减200！可商品详情页内领取优惠券！</a></p>
-                            <ul>
-                                <li class="num">
-                                    <span class="name">商品货号：</span>
-                                    <em>NK6952</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class="name old">售价：</span>
-                                    <i>￥198.00</i>
-                                </li>
-                                <li class="price">
-                                    <span class="name">促 销 价：</span>
-                                    <em>￥91.00</em>
-                                </li>
-                                <li class="sales">
-                                    <span class="name">销　　量：</span>
-                                    <em>13件</em>
-                                </li>
-                                <li class="eval clearfix">
-                                    <span class="name">用户评分：</span>
-                                    <em class="star"></em>
-                                    <i>(共有&nbsp;<em>0</em>&nbsp;条评论)</i>
-                                </li>
-                            </ul>
+                            <!--<h2>娜娜日记2017秋装新款女装时尚拼接字母图案印花T恤NK6952冉0822</h2>-->
+                            <!--<p class="discounts"><a href="#" target="_blank">【暖冬钜惠】全场通用满299减20/满499减50/满599减80/满799减120/满999减200！可商品详情页内领取优惠券！</a></p>-->
+                            <!--<ul>-->
+                                <!--<li class="num">-->
+                                    <!--<span class="name">商品货号：</span>-->
+                                    <!--<em>NK6952</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                                    <!--<span class="name old">售价：</span>-->
+                                    <!--<i>￥198.00</i>-->
+                                <!--</li>-->
+                                <!--<li class="price">-->
+                                    <!--<span class="name">促 销 价：</span>-->
+                                    <!--<em>￥91.00</em>-->
+                                <!--</li>-->
+                                <!--<li class="sales">-->
+                                    <!--<span class="name">销　　量：</span>-->
+                                    <!--<em>13件</em>-->
+                                <!--</li>-->
+                                <!--<li class="eval clearfix">-->
+                                    <!--<span class="name">用户评分：</span>-->
+                                    <!--<em class="star"></em>-->
+                                    <!--<i>(共有&nbsp;<em>0</em>&nbsp;条评论)</i>-->
+                                <!--</li>-->
+                            <!--</ul>-->
                         </div>
                         <div class="show_right_center">
                             <div class="size clearfix">
@@ -172,13 +179,13 @@
                             <li>常见问题</li>
                         </ul>
                     </div>
-                    <div class="shopping_details">
+                    <div class="shopping_details show">
                         <img src="../images/content.jpg" alt=""/>
                     </div>
-                    <div class="comment_details">
+                    <div class="comment_details show">
                         暂无评论
                     </div>
-                    <div class="question"></div>
+                    <div class="question show"></div>
                 </div>
             </div>
         </div>
