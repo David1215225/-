@@ -42,208 +42,250 @@ $borderStyle :1px solid #E7E7E7;
       margin-left: 133px;
     }
   }
-  .goodsList{
-    width: 1198px;
-    border: 1px solid #D9D8D8;
-    h3{
-      margin-top: 16px;
-      height: 24px;
-      line-height: 24px;
-      color: #333333;
-      padding-left: 20px;
-      font-size: #{$fontSize}px;
-    }
-    ul{
-      width: 1183px;
-      height: 155px;
-      background: #FCFCFC;
-      padding: 10px 0 0 15px;
-      li{
-        height: 124px;
-        border-bottom: 1px solid #EAEAEA;
-        .product_img{
-          width: 112px;
-          height: 112px;
-          float: left;
-          border: 1px solid #EAEAEA;
-          img{
-            width: 100%;
-            height: 100%;
+  .shopping_have{
+    display: none;
+    .goodsList{
+      width: 1198px;
+      border: 1px solid #D9D8D8;
+      h3{
+        margin-top: 16px;
+        height: 24px;
+        line-height: 24px;
+        color: #333333;
+        padding-left: 20px;
+        font-size: #{$fontSize}px;
+      }
+      ul{
+        width: 1183px;
+        height: 155px;
+        background: #FCFCFC;
+        padding: 10px 0 0 15px;
+        li{
+          height: 124px;
+          border-bottom: 1px solid #EAEAEA;
+          .product_img{
+            width: 112px;
+            height: 112px;
+            float: left;
+            border: 1px solid #EAEAEA;
+            img{
+              width: 100%;
+              height: 100%;
+            }
           }
-        }
-        .product_details{
-          width: 243px;
-          height: 87px;
-          float: left;
-          padding-left: 10px;
-          padding-top: 27px;
-          background: url("../images/shopping_car_bg.png") no-repeat right center;
-          .product_name{
-            font-size: #{$fontSize}px;
+          .product_details{
+            width: 243px;
+            height: 87px;
+            float: left;
+            padding-left: 10px;
+            padding-top: 27px;
+            background: url("../images/shopping_car_bg.png") no-repeat right center;
+            .product_name{
+              font-size: #{$fontSize}px;
+              line-height: 20px;
+              a{
+                color:#565656;
+              }
+              a:hover{
+                color:#bf0000;
+                text-decoration: underline;
+              }
+            }
+            .details{
+              margin-top: 7px;
+              color: #000;
+              font-size: #{$fontSize}px;
+            }
+          }
+          .price{
+            width: 132px;
+            background: url("../images/shopping_car_bg.png") no-repeat right center;
+            float: left;
+            height: 84px;
+            padding-top: 34px;
             line-height: 20px;
+            text-align: center;
+            font-size: #{$fontSize}px;
+            color: #000;
+            .price_old{
+              color:#999999;
+              text-decoration: line-through;
+            }
+          }
+          .number{
+            float: left;
+            width: 105px;
+            height: 22px;
+            background: url("../images/shopping_car_bg.png") no-repeat right center;
+            padding: 44px 0 48px 27px;
+            .minus{
+              width: 12px;
+              height: 12px;
+              float: left;
+              margin-top: 6px;
+              border: 1px solid #A7A6AB;
+              line-height: 12px;
+              cursor: pointer;
+              text-align: center;
+            }
+            .import_num{
+              width: 36px;
+              height: 20px;
+              float: left;
+              margin: 0 6px;
+              text-align: center;
+            }
+            .add{
+              width: 12px;
+              height: 12px;
+              float: left;
+              margin-top: 6px;
+              cursor: pointer;
+              border: 1px solid #A7A6AB;
+              line-height: 12px;
+              text-align: center;
+            }
+          }
+          .subtotal{
+            width: 122px;
+            height: 114px;
+            float: left;
+            background: url("../images/shopping_car_bg.png") no-repeat right center;
+            line-height: 114px;
+            text-align: center;
+            color: #BF0000;
+            font-size: #{$fontSize}px;
+          }
+          .handle{
+            width: 134px;
+            background: url("../images/shopping_car_bg.png") no-repeat right center;
+            float: left;
+            padding:37px 0;
+            line-height: 17px;
+            text-align: center;
             a{
-              color:#565656;
+              font-size: #{$fontSize}px;
+              color: #565656;
             }
             a:hover{
               color:#bf0000;
               text-decoration: underline;
             }
           }
-          .details{
-            margin-top: 7px;
-            color: #000;
-            font-size: #{$fontSize}px;
-          }
-        }
-        .price{
-          width: 132px;
-          background: url("../images/shopping_car_bg.png") no-repeat right center;
-          float: left;
-          height: 84px;
-          padding-top: 34px;
-          line-height: 20px;
-          text-align: center;
-          font-size: #{$fontSize}px;
-          color: #000;
-          .price_old{
-            color:#999999;
-            text-decoration: line-through;
-          }
-        }
-        .number{
-          float: left;
-          width: 105px;
-          height: 22px;
-          background: url("../images/shopping_car_bg.png") no-repeat right center;
-          padding: 44px 0 48px 27px;
-          .minus{
-            width: 12px;
-            height: 12px;
+          .remark{
+            width: 170px;
             float: left;
-            margin-top: 6px;
-            border: 1px solid #A7A6AB;
-            line-height: 12px;
-            cursor: pointer;
-            text-align: center;
-          }
-          .import_num{
-            width: 36px;
-            height: 20px;
-            float: left;
-            margin: 0 6px;
-            text-align: center;
-          }
-          .add{
-            width: 12px;
-            height: 12px;
-            float: left;
-            margin-top: 6px;
-            cursor: pointer;
-            border: 1px solid #A7A6AB;
-            line-height: 12px;
-            text-align: center;
-          }
-        }
-        .subtotal{
-          width: 122px;
-          height: 114px;
-          float: left;
-          background: url("../images/shopping_car_bg.png") no-repeat right center;
-          line-height: 114px;
-          text-align: center;
-          color: #BF0000;
-          font-size: #{$fontSize}px;
-        }
-        .handle{
-          width: 134px;
-          background: url("../images/shopping_car_bg.png") no-repeat right center;
-          float: left;
-          padding:37px 0;
-          line-height: 17px;
-          text-align: center;
-          a{
-            font-size: #{$fontSize}px;
-            color: #565656;
-          }
-          a:hover{
-            color:#bf0000;
-            text-decoration: underline;
-          }
-        }
-        .remark{
-          width: 170px;
-          float: left;
-          padding: 17px 0 13px 0;
-          line-height: 17px;
-          margin-left: 12px;
-          a{
-            font-size: #{$fontSize}px;
-            color: #C80A28;
-          }
-          a:hover{
-            text-decoration: underline;
+            padding: 17px 0 13px 0;
+            line-height: 17px;
+            margin-left: 12px;
+            a{
+              font-size: #{$fontSize}px;
+              color: #C80A28;
+            }
+            a:hover{
+              text-decoration: underline;
+            }
           }
         }
       }
     }
-  }
-  .total{
-    height: 144px;
-    width: 1198px;
-    border: 1px solid #DEDEDE;
-    border-top: none;
-    .total_list{
+    .total{
+      height: 144px;
+      width: 1198px;
+      border: 1px solid #DEDEDE;
+      border-top: none;
+      .total_list{
+        width: 100%;
+        height: 98px;
+        border-bottom: 1px solid #DEDEDE;
+        .total_right{
+          //width: 500px;
+          float: right;
+          margin-right: 10px;
+          margin-top: 2px;
+          td{
+            text-align: right;
+            margin-top: 15px;
+            height: 26px;
+            font-size: #{$fontSize}px;
+          }
+        }
+      }
+      .total_price{
+        background:#FDFDFD;
+        height: 45px;
+        text-align: right;
+        padding-right: 10px;
+        line-height: 45px;
+        font-size: #{$fontSize}px;
+        color: #000;
+        em{
+          color:#BF0000;
+          font-size: 18px;
+        }
+      }
+    }
+    .shopping{
       width: 100%;
-      height: 98px;
-      border-bottom: 1px solid #DEDEDE;
-      .total_right{
-        //width: 500px;
-        float: right;
-        margin-right: 10px;
-        margin-top: 2px;
-        td{
-          text-align: right;
-          margin-top: 15px;
-          height: 26px;
-          font-size: #{$fontSize}px;
-        }
+      height: 71px;
+      margin-top: 12px;
+      border-bottom: 1px solid #DFDFDF;
+      a{
+        text-indent: -99999px;
+        overflow: hidden;
       }
-    }
-    .total_price{
-      background:#FDFDFD;
-      height: 45px;
-      text-align: right;
-      padding-right: 10px;
-      line-height: 45px;
-      font-size: #{$fontSize}px;
-      color: #000;
-      em{
-        color:#BF0000;
-        font-size: 18px;
+      .please{
+        display: block;
+        float: left;
+        width: 120px;
+        height: 38px;
+        background:url("../images/cart_img.png") no-repeat -15px -746px;
+      }
+      .clearing{
+        float: right;
+        width: 159px;
+        height: 36px;
+        background:url("../images/cart_img.png") no-repeat -15px -361px;
       }
     }
   }
-  .shopping{
-    width: 100%;
-    height: 71px;
-    margin-top: 12px;
-    border-bottom: 1px solid #DFDFDF;
-    a{
-      text-indent: -99999px;
+  .shopping_none{
+    display: block;
+    width: 1198px;
+    //float: left;
+    min-height: 45px;
+    height: auto;
+    line-height: 26px;
+    border: solid 1px #ddd;
+    border-top: none;
+    .shopping_car_arrow{
+      width: 502px;
+      height: 108px;
+      float: none;
+      margin: 0 auto;
+      padding: 20px 0;
       overflow: hidden;
-    }
-    .please{
-      display: block;
-      float: left;
-      width: 120px;
-      height: 38px;
-      background:url("../images/cart_img.png") no-repeat -15px -746px;
-    }
-    .clearing{
-      float: right;
-      width: 159px;
-      height: 36px;
-      background:url("../images/cart_img.png") no-repeat -15px -361px;
+      .car_arrow{
+        background: url(../images/gouwuc.png) no-repeat 0 0;
+        width: 72px;
+        height: 89px;
+        float: left;
+      }
+      .car_arrow_txt{
+        float: left;
+        width: 80%;
+        margin: 25px 0 0 20px;
+        .car_arrow_warn{
+          font-size: 18px;
+          font-family: 'Microsoft YaHei';
+          color: #333333;
+        }
+        .go_shopping{
+          color: #c80a28;
+          font-size: 14px;
+          text-decoration: underline;
+        }
+      }
     }
   }
   .recommend{

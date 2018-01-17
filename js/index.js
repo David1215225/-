@@ -225,7 +225,8 @@
                     //<li><a href="#"><img src="./images/nana.png" alt=""/></a></li>
                     //console.log(<li><a id = "1" href="' + result1.link +'"><img src="' + result1.path + ' alt="' + result1.name + '"/></a></li>);
                     //'<li><a id = "' + result1.id + '" href="'
-                    $(".first_show1 ul").append('<li class="column"><a id="'+ result1.id +'" href="html/' + result1.link +'"><img src="' + result1.path + '" alt="' + result1.name + '"/></a></li>');
+                    $(".first_show1 ul").append('<li class="column"><a name="' + result1.name + '" id="'+ result1.id +'" href="html/' + result1.link +'"><img src="' + result1.path + '" alt="' + result1.name + '"/></a></li>');
+
                 });
                 //精选推荐
                 var secondColumn = result[2].ColumnList;
@@ -239,7 +240,7 @@
                     $.each(secondColumn[num].ColumnList,function(index2,result2){//获取三级栏目
                         //console.log("--" + result2.name + "--" + result2.link);
                         //<ul class="clearfix"> <h3>特惠精选</h3> <li><a href="#">清仓特惠</a></li> </ul>
-                        $(".second_show1 ul").eq(num).append('<li class="column"><a id="'+ result2.id +'" href="html/' + result2.link + '">' + result2.name + '</a></li>');
+                        $(".second_show1 ul").eq(num).append('<li class="column"><a name="'+ result2.name +'" id="'+ result2.id +'" href="html/' + result2.link + '">' + result2.name + '</a></li>');
                     })
                 }
             })
@@ -265,6 +266,9 @@
             //});
             $(".allClassify").delegate(".column a","click",function(){
                 var id = $(this).attr("id");
+                var parentName = $(this).attr("name");
+                //alert(parentName);
+                $.cookie("parentName",parentName,{expires : 7,path : "/"});
                 $.cookie("id",id ,{ expires : 7,path : "/" });
             })
         }

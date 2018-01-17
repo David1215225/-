@@ -838,12 +838,16 @@ textarea {
   margin-left: 133px;
 }
 
-.shoppingCart .goodsList {
+.shoppingCart .shopping_have {
+  display: none;
+}
+
+.shoppingCart .shopping_have .goodsList {
   width: 1198px;
   border: 1px solid #D9D8D8;
 }
 
-.shoppingCart .goodsList h3 {
+.shoppingCart .shopping_have .goodsList h3 {
   margin-top: 16px;
   height: 24px;
   line-height: 24px;
@@ -852,31 +856,31 @@ textarea {
   font-size: 12px;
 }
 
-.shoppingCart .goodsList ul {
+.shoppingCart .shopping_have .goodsList ul {
   width: 1183px;
   height: 155px;
   background: #FCFCFC;
   padding: 10px 0 0 15px;
 }
 
-.shoppingCart .goodsList ul li {
+.shoppingCart .shopping_have .goodsList ul li {
   height: 124px;
   border-bottom: 1px solid #EAEAEA;
 }
 
-.shoppingCart .goodsList ul li .product_img {
+.shoppingCart .shopping_have .goodsList ul li .product_img {
   width: 112px;
   height: 112px;
   float: left;
   border: 1px solid #EAEAEA;
 }
 
-.shoppingCart .goodsList ul li .product_img img {
+.shoppingCart .shopping_have .goodsList ul li .product_img img {
   width: 100%;
   height: 100%;
 }
 
-.shoppingCart .goodsList ul li .product_details {
+.shoppingCart .shopping_have .goodsList ul li .product_details {
   width: 243px;
   height: 87px;
   float: left;
@@ -885,27 +889,27 @@ textarea {
   background: url("../images/shopping_car_bg.png") no-repeat right center;
 }
 
-.shoppingCart .goodsList ul li .product_details .product_name {
+.shoppingCart .shopping_have .goodsList ul li .product_details .product_name {
   font-size: 12px;
   line-height: 20px;
 }
 
-.shoppingCart .goodsList ul li .product_details .product_name a {
+.shoppingCart .shopping_have .goodsList ul li .product_details .product_name a {
   color: #565656;
 }
 
-.shoppingCart .goodsList ul li .product_details .product_name a:hover {
+.shoppingCart .shopping_have .goodsList ul li .product_details .product_name a:hover {
   color: #bf0000;
   text-decoration: underline;
 }
 
-.shoppingCart .goodsList ul li .product_details .details {
+.shoppingCart .shopping_have .goodsList ul li .product_details .details {
   margin-top: 7px;
   color: #000;
   font-size: 12px;
 }
 
-.shoppingCart .goodsList ul li .price {
+.shoppingCart .shopping_have .goodsList ul li .price {
   width: 132px;
   background: url("../images/shopping_car_bg.png") no-repeat right center;
   float: left;
@@ -917,12 +921,12 @@ textarea {
   color: #000;
 }
 
-.shoppingCart .goodsList ul li .price .price_old {
+.shoppingCart .shopping_have .goodsList ul li .price .price_old {
   color: #999999;
   text-decoration: line-through;
 }
 
-.shoppingCart .goodsList ul li .number {
+.shoppingCart .shopping_have .goodsList ul li .number {
   float: left;
   width: 105px;
   height: 22px;
@@ -930,7 +934,7 @@ textarea {
   padding: 44px 0 48px 27px;
 }
 
-.shoppingCart .goodsList ul li .number .minus {
+.shoppingCart .shopping_have .goodsList ul li .number .minus {
   width: 12px;
   height: 12px;
   float: left;
@@ -941,7 +945,7 @@ textarea {
   text-align: center;
 }
 
-.shoppingCart .goodsList ul li .number .import_num {
+.shoppingCart .shopping_have .goodsList ul li .number .import_num {
   width: 36px;
   height: 20px;
   float: left;
@@ -949,7 +953,7 @@ textarea {
   text-align: center;
 }
 
-.shoppingCart .goodsList ul li .number .add {
+.shoppingCart .shopping_have .goodsList ul li .number .add {
   width: 12px;
   height: 12px;
   float: left;
@@ -960,7 +964,7 @@ textarea {
   text-align: center;
 }
 
-.shoppingCart .goodsList ul li .subtotal {
+.shoppingCart .shopping_have .goodsList ul li .subtotal {
   width: 122px;
   height: 114px;
   float: left;
@@ -971,7 +975,7 @@ textarea {
   font-size: 12px;
 }
 
-.shoppingCart .goodsList ul li .handle {
+.shoppingCart .shopping_have .goodsList ul li .handle {
   width: 134px;
   background: url("../images/shopping_car_bg.png") no-repeat right center;
   float: left;
@@ -980,17 +984,17 @@ textarea {
   text-align: center;
 }
 
-.shoppingCart .goodsList ul li .handle a {
+.shoppingCart .shopping_have .goodsList ul li .handle a {
   font-size: 12px;
   color: #565656;
 }
 
-.shoppingCart .goodsList ul li .handle a:hover {
+.shoppingCart .shopping_have .goodsList ul li .handle a:hover {
   color: #bf0000;
   text-decoration: underline;
 }
 
-.shoppingCart .goodsList ul li .remark {
+.shoppingCart .shopping_have .goodsList ul li .remark {
   width: 170px;
   float: left;
   padding: 17px 0 13px 0;
@@ -998,42 +1002,42 @@ textarea {
   margin-left: 12px;
 }
 
-.shoppingCart .goodsList ul li .remark a {
+.shoppingCart .shopping_have .goodsList ul li .remark a {
   font-size: 12px;
   color: #C80A28;
 }
 
-.shoppingCart .goodsList ul li .remark a:hover {
+.shoppingCart .shopping_have .goodsList ul li .remark a:hover {
   text-decoration: underline;
 }
 
-.shoppingCart .total {
+.shoppingCart .shopping_have .total {
   height: 144px;
   width: 1198px;
   border: 1px solid #DEDEDE;
   border-top: none;
 }
 
-.shoppingCart .total .total_list {
+.shoppingCart .shopping_have .total .total_list {
   width: 100%;
   height: 98px;
   border-bottom: 1px solid #DEDEDE;
 }
 
-.shoppingCart .total .total_list .total_right {
+.shoppingCart .shopping_have .total .total_list .total_right {
   float: right;
   margin-right: 10px;
   margin-top: 2px;
 }
 
-.shoppingCart .total .total_list .total_right td {
+.shoppingCart .shopping_have .total .total_list .total_right td {
   text-align: right;
   margin-top: 15px;
   height: 26px;
   font-size: 12px;
 }
 
-.shoppingCart .total .total_price {
+.shoppingCart .shopping_have .total .total_price {
   background: #FDFDFD;
   height: 45px;
   text-align: right;
@@ -1043,24 +1047,24 @@ textarea {
   color: #000;
 }
 
-.shoppingCart .total .total_price em {
+.shoppingCart .shopping_have .total .total_price em {
   color: #BF0000;
   font-size: 18px;
 }
 
-.shoppingCart .shopping {
+.shoppingCart .shopping_have .shopping {
   width: 100%;
   height: 71px;
   margin-top: 12px;
   border-bottom: 1px solid #DFDFDF;
 }
 
-.shoppingCart .shopping a {
+.shoppingCart .shopping_have .shopping a {
   text-indent: -99999px;
   overflow: hidden;
 }
 
-.shoppingCart .shopping .please {
+.shoppingCart .shopping_have .shopping .please {
   display: block;
   float: left;
   width: 120px;
@@ -1068,11 +1072,55 @@ textarea {
   background: url("../images/cart_img.png") no-repeat -15px -746px;
 }
 
-.shoppingCart .shopping .clearing {
+.shoppingCart .shopping_have .shopping .clearing {
   float: right;
   width: 159px;
   height: 36px;
   background: url("../images/cart_img.png") no-repeat -15px -361px;
+}
+
+.shoppingCart .shopping_none {
+  display: block;
+  width: 1198px;
+  min-height: 45px;
+  height: auto;
+  line-height: 26px;
+  border: solid 1px #ddd;
+  border-top: none;
+}
+
+.shoppingCart .shopping_none .shopping_car_arrow {
+  width: 502px;
+  height: 108px;
+  float: none;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.shoppingCart .shopping_none .shopping_car_arrow .car_arrow {
+  background: url(../images/gouwuc.png) no-repeat 0 0;
+  width: 72px;
+  height: 89px;
+  float: left;
+}
+
+.shoppingCart .shopping_none .shopping_car_arrow .car_arrow_txt {
+  float: left;
+  width: 80%;
+  margin: 25px 0 0 20px;
+}
+
+.shoppingCart .shopping_none .shopping_car_arrow .car_arrow_txt .car_arrow_warn {
+  font-size: 18px;
+  font-family: 'Microsoft YaHei';
+  color: #333333;
+}
+
+.shoppingCart .shopping_none .shopping_car_arrow .car_arrow_txt .go_shopping {
+  color: #c80a28;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .shoppingCart .recommend {

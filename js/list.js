@@ -156,7 +156,7 @@
                 $.each(data,function(index,data1){
                     //'<li class="clearfix"><div><a href="' + data1.link + '" title= "' + data1.name + '"><img src="../' + data1.imgsrc + '" alt="' + data1.name + '" /></a><p class="img"><img src="../' + data1.imgsrc + '"/></p><p class="price"><span class="price_new">' + data1.newPrice + '</span><span class="price_old">' + data1.oldPrice + '</span></p><p class="name"><a href="' + data1.link + '">' + data1.name + '</a></p><p class="month_eval"><span class="month">' + data1.pending + '<br /><i>月销量</i></span><span class="eval">' + data1.app + '<br /><i>累计评价</i></span></p></div></li>'
                     $("title").html(data1.name);
-                    $(".list ul").append('<li id ="' + data1.goodid + '" class="clearfix"><div><a target="_blank" href="' + data1.link + '" title="' + data1.name + '"><img src="../' + data1.imgsrc + '" alt="' + data1.name + '" /></a><p class="img"><img src="../' + data1.imgsrc + '"/></p><p class="price"><span class="price_new">' + data1.newPrice + '</span><span class="price_old">' + data1.oldPrice + '</span></p><p class="name"><a  target="_blank" href="' + data1.link + '" title= "' + data1.name + '">' + data1.name + '</a></p><p class="month_eval"><span class="month">' + data1.pending + '<br /><i>月销量</i></span><span class="eval">' + data1.app + '<br /><i>累计评价</i></span></p></div></li>');
+                    $(".list ul").append('<li id ="' + data1.goodid + '" class="clearfix"><div><a target="_blank" href="' + data1.link + '" title="' + data1.name + '"><img src="../' + data1.imgsrc + '" alt="' + data1.name + '" /></a><p class="img"><img src="../' + data1.imgsrc + '"/></p><p class="price"><span class="price_new">￥' + data1.newPrice + '</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="price_old">￥' + data1.oldPrice + '</span></p><p class="name"><a  target="_blank" href="' + data1.link + '" title= "' + data1.name + '">' + data1.name + '</a></p><p class="month_eval"><span class="month">' + data1.pending + '<br /><i>月销量</i></span><span class="eval">' + data1.app + '<br /><i>累计评价</i></span></p></div></li>');
                     //console.log(data1.goodid);
                 });
                 //列表页鼠标滑过时效果
@@ -176,7 +176,7 @@
                 //点击稿件将稿件ID放入到cookie中
                 $(".list ul").delegate("li","click",function(){
                     var id = $(this).attr("id");
-                    $.cookie("goodId",id,{ expires : 7,path : "/" });
+                    $.cookie("goodId",id,{path : "/" });
                 })
             }
             createCookie();
